@@ -1,0 +1,118 @@
+{
+	"info": {
+		"_postman_id": "ba4d9abc-db7f-4d32-80e0-c33674e73e6c",
+		"name": "node_test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "adsad"
+				},
+				"url": {
+					"raw": "localhost:8080/getDataFromHere",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"getDataFromHere"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST request",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"some_key\": \"with value\" \n}"
+				},
+				"url": {
+					"raw": "localhost:8080/postDataToHere",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"postDataToHere"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT request",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"some_key\": \"with value\",\n\t\"another_key\": \"with another value\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/updateData",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"updateData"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE request",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "text/plain",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "Delete me pls"
+				},
+				"url": {
+					"raw": "localhost:8080/deleteData",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"deleteData"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
